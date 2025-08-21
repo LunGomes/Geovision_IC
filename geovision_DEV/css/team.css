@@ -1,0 +1,122 @@
+:root {
+  --color-light: #f4f4f4;
+  --color-verde: #4A7C59;
+  --color-azul: #2E6D9F;
+  --color-amarelo: #D4A24C;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%; 
+}
+
+.section-time {
+  background-image: url(../images/bg-time.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100dvh;
+  margin: 0rem auto;
+  padding: var(--spacing-30) 0;
+}
+
+.container-time {
+  max-width: 120rem;
+  margin: 2rem auto 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  padding: 2rem;
+}
+
+.card-time {
+    width: 30rem;
+    height: 45rem;
+    background: transparent;
+    border-radius: 1rem;
+    position: relative;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.card-time:hover {
+    box-shadow: 0px 0px 2rem 1px var(--color-light);
+    transition: 0.5s;
+}
+
+.bg {
+    width: 90%;
+    transition: 0.7s;
+    margin-left: 2rem;
+    margin: 2rem;
+}
+
+.card-time:hover .bg {
+    transform: rotate(120deg);
+    transition: 0.7s;
+}
+
+.card-time h4 {
+    font-weight: 500;
+}
+
+.one {
+    width: 90%;
+    position: absolute;
+    top: 1rem;
+    left: 10px;
+}
+
+.time-icons {
+    margin-top: 4rem;
+}
+
+.time-icons ion-icon {
+    font-size: 2rem;
+    border-radius: 50%;
+    padding: 8px;
+    cursor: pointer;
+    background: var(--color-amarelo);
+    color: #f4f4f4;
+    border: 2px solid var(--color-azul);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.time-icons ion-icon:hover {
+    color: var(--color-amarelo);
+    border: 2px solid var(--color-amarelo);
+    background: transparent;
+}
+
+.card-time:hover .time-icons  ion-icon {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+@media (width <= 640px) {
+  .container-time {
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    padding: 0;
+    margin: 2rem auto;
+  }
+
+  .card-time {
+    margin: 0 auto;
+    padding-bottom: 1rem;
+    width: 80%;
+    height: auto;
+  }
+
+  .bg,
+  .one {
+    width: 80%;
+  }
+
+  .time-icons ion-icon {
+    opacity: 1;
+  }
+}
