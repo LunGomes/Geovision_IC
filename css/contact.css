@@ -1,20 +1,23 @@
 :root {
-    --text-color: #000;
+    --text-color: #fff;
     --main-hue: 208;
     --main-color: #D4A24C;
-    --main-color-hover: #4A7C59;
-    --nav-color: hsl(var(--main-hue), 17%, 79%);
-    --bg-color: #fff;
-    --light-text-color: #9ca7b6;
-    --input-bg: hsla(var(--main-hue), 50%, 50%, 6.5%);
-    --input-bg-hover: hsla(var(--main-hue), 50%, 50%, 14%);
-    --input-text: #8c9aaf;
-    --light-main-color: #2E6D9F;
-    --input-shadow: #4A7C59;
+    --main-color-hover: #2E6D9F;
+    --bg-color: #4A7C59;
+    --light-text-color: #f1f4f7;
+    --input-bg: hsla(var(--main-hue), 50%, 50%, 35%);
+    --input-bg-hover: hsla(var(--main-hue), 50%, 50%, 45%);
+    --input-text: #e8ecf1;
+    --light-main-color: #D4A24C;
+    --input-shadow: #e2e9f1;
 }
 
 a {
     text-decoration: none;
+}
+
+main {
+    background-color: var(--bg-color);
 }
 
 .contact {

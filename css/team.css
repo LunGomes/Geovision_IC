@@ -52,6 +52,12 @@ html {
     margin: 2rem;
 }
 
+.color-verde-titulo {
+  color: var(--color-verde);
+  width: 90%;
+  margin: 0 auto;
+}
+
 .card-time:hover .bg {
     transform: rotate(120deg);
     transition: 0.7s;
