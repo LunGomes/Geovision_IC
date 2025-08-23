@@ -91,8 +91,8 @@ html {
 }
 
 .time-icons ion-icon:hover {
-    color: var(--color-amarelo);
-    border: 2px solid var(--color-amarelo);
+    color: var(--color-azul);
+    border: 2px solid var(--color-light);
     background: transparent;
 }
 

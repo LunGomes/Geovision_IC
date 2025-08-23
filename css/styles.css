@@ -1,5 +1,6 @@
 :root {
   --font-body: "Poppins", sans-serif;
+  --color-branca-bg: #fff;
   --color-light: #f4f4f4;
   --color-verde: #4A7C59;
   --color-azul: #2E6D9F;
@@ -15,6 +16,7 @@ html {
 
 body {
   font-size: 1.6rem; /* 16px --> Quem não tem o font-size declarado se baseia nele*/
+  background-color: var(--color-branca-bg);
 }
 
 * {
@@ -57,7 +59,7 @@ svg {
   bottom: 2rem;
   right: 2rem;
   font-size: 1.2rem;
-  border: 1px solid var(--color-grey);
+  background-color: var(--color-branca-bg);
   border-radius: 1rem;
   padding: 0.8rem;
   text-align: center;
