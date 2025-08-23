@@ -37,7 +37,7 @@ a {
 }
 
 a:hover {
-  color: var(--color-pink);
+  color: var(--color-amarelo);
 }
 
 img {
@@ -220,6 +220,10 @@ svg {
   padding-bottom: 1rem;
   border-bottom: 2px solid var(--color-amarelo);
   cursor: pointer;
+}
+
+.faq h3 {
+  color: var(--color-azul);
 }
 
 .question {
