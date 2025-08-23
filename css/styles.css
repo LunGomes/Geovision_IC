@@ -113,6 +113,8 @@ svg {
 
 .nav-menu {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;  
   gap: var(--spacing-30);
 }
 
@@ -496,6 +498,7 @@ svg {
 
 /* Responsivo */
 
+
 @media(width <= 640px) {
   .header-hero {
     flex-direction: column;
@@ -522,6 +525,12 @@ svg {
   .icon-svg{
     padding: 1.5rem;
   }
+  
+  .nav-menu {
+    text-align: center;
+    gap: 2rem;
+  }
+
 }
 
 
