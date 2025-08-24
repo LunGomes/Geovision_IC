@@ -337,6 +337,7 @@ svg {
     grid-column-start: 6;
     grid-row-start: 3;
     height: 17rem;
+    border-radius: 1rem;
     background-image:
     url(../images/image2.png);
     background-size: cover;
@@ -529,6 +530,20 @@ svg {
   .nav-menu {
     text-align: center;
     gap: 2rem;
+  }
+
+ .parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    grid-auto-flow: row dense;
+  }
+
+  .div1 { grid-column: 1 / -1; height: 20rem; }
+
+  .div2, .div3, .div4, .div5 {
+    grid-column: span 1; 
+    height: 15rem;
   }
 
 }
